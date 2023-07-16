@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Hanken Grotesk";
+  font-size: 1rem;
+  color: #000;
+  height: 100%;
+  align-items: center;
+}
+
+.card-layout {
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 2rem;
+}
+
+.result-card,.summary-card{
+    flex: 1;
+    padding: 1.5rem;
+}
+
+.result-card{
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    color: hsl(0, 0%, 100%);
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.circle{
+    display: grid;
+    place-content: center;
+    width: 12rem;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    margin: 1rem auto 2rem auto;
+}
+
+.circle span {
+    display: block;
+}
+
+.faded-elements{
+    opacity: 0.6;
+}
+
+.card{
+    margin: 1rem auto;
+    padding: 0.7rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reaction-card{
+    background: hsl(0, 95%, 98%);
+    color: hsl(0, 100%, 67%);
+}
+.memory-card{
+    background: hsl(39, 100%, 96%);
+    color: hsl(39, 100%, 56%);
+}
+.verbal-card{
+    background: hsl(166, 100%, 97%);
+    color: hsl(166, 100%, 37%);
+}
+.visual-card{
+    background: hsl(234, 85%, 97%);
+    color: hsl(234, 85%, 45%);
+}
+
+.continue-btn{
+    width: 100%;
+    border-radius: 20rem;
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    line-height: 1;
+    padding: 1rem 2rem;
+    border: 0;
+    border-radius: 100vw;
+    cursor: pointer;
+    font-size: 0.87rem;
+}
+
+.outOf {
+    color: hsl(224, 30%, 27%);
+    opacity: 0.7;
+    padding-left: 0.3rem;
+}
+
+.summary-heading{
+    text-align: start;
+}
+
+.result-score{
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+.desc{
+    font-size: 0.8rem;
+}
+
+.expression{
+    line-height: 2;
+}
+
+/* media query */
+@media (min-width: 600px){
+    body{
+        display: flex;
+        min-height: 100vh;
+    }
+    .card-layout{
+        display: flex;
+        box-shadow: 0.5rem 1rem 1rem   hsl(221, 100%, 96%);
+        max-width: 37rem;
+    }
+    .result-card{
+        border-radius: 2rem;
+    }
+}
+

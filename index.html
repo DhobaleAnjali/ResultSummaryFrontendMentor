@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" class="scss" />
+
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body>
+    <div class="card-layout">
+      <div class="result-card">
+        <h4 class="faded-elements">Your Result</h4>
+        <p class="circle">
+          <span class="result-score">76</span>
+          <span class="faded-elements">of 100</span>
+        </p>
+        <h3 class="expression">Great</h3>
+        <p class="faded-elements desc">
+          You scored higher than 65% of the people who have taken these tests
+        </p>
+      </div>
+      <div class="summary-card">
+        <h4 class="summary-heading">Summary</h4>
+        <div class="reaction-card card">
+          <img src="./assets/images/icon-reaction.svg" />
+          <span>Reaction</span>
+          <span>80<span class="outOf">/100</span></span>
+        </div>
+
+        <div class="memory-card card">
+          <img src="./assets/images/icon-memory.svg" />
+          <span>Memory</span>
+          <span>92<span class="outOf">/100</span></span>
+        </div>
+        <div class="verbal-card card">
+          <img src="./assets/images/icon-verbal.svg" />
+          <span>Verbal</span>
+          <span>61<span class="outOf">/100</span></span>
+        </div>
+        <div class="visual-card card">
+          <img src="./assets/images/icon-visual.svg" />
+          <span>Visual</span>
+          <span>72<span class="outOf">/100</span></span>
+        </div>
+        <button class="continue-btn">Continue</button>
+      </div>
+    </div>
+  </body>
+</html>
